@@ -87,11 +87,11 @@ object Character16 {
 }
 
 readDocumentVerify --> characterFactory : "uses"
-characterFactory -[hidden]-> CharacterProperties1
-characterFactory -[hidden]-> CharacterProperties2
-characterFactory -[hidden]-> CharacterProperties3
-characterFactory -[hidden]-> CharacterProperties4
-characterFactory -[hidden]-> CharacterProperties5
+characterFactory ---> CharacterProperties1
+characterFactory ---> CharacterProperties2
+characterFactory ---> CharacterProperties3
+characterFactory ---> CharacterProperties4
+characterFactory ---> CharacterProperties5
 readDocumentVerify --> Character1 : "contains"
 readDocumentVerify --> Character2 : "contains"
 readDocumentVerify --> Character3 : "contains"
